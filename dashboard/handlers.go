@@ -8,7 +8,8 @@ import (
 //UseHandlers makes all routes work
 func UseHandlers() {
 	server := martini.Classic()
-	server.Group("/dashboard", func(r martini.Router) {
-		r.Post("/home", Home)
+	server.Get("/dashboard", func() string {
+		//present dashboard
+		return "dashboard"
 	}, accounts.AuthMiddleware)
 }
