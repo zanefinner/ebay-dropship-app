@@ -15,10 +15,9 @@ func main() {
 	server.Use(render.Renderer())
 
 	//Landing page
-	server.Get("/", func() string {
-		return "home page"
+	server.Get("/", func(params martini.Params, renderer render.Render) {
+		renderer.Redirect("http://localhost:3000/hello.html")
 	})
-
 	//Account
 	server.Group("/accounts", func(r martini.Router) {
 		r.Post("/new", accounts.New)
