@@ -1,9 +1,7 @@
 package main
 
-import (
-	"fmt"
-)
+import "github.com/zanefinner/web-scraper/site"
 
 func main() {
-	fmt.Println("Hello")
+	site.UseHandlers()
 }
