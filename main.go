@@ -11,7 +11,9 @@ import (
 
 func main() {
 	server := martini.Classic()
+
 	server.Use(render.Renderer())
+
 	//Landing page
 	server.Get("/", func() string {
 		return "home page"
