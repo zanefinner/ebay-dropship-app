@@ -1,0 +1,51 @@
+html, body{
+	background-color: #222831;
+	font-family: Liberation Sans;
+}
+.top{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 38px;
+	width: 100%;
+	background-color: #eeeeee;
+}
+.top a{
+	color: black;
+	line-height: 38px;
+	font-size: 29px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+.left{
+	position: absolute;
+	left: 0;
+	top: 38px;
+	bottom: 0;
+	width: 300px;
+	background-color: #393e46;
+}
+.content{
+	position: absolute;
+	top: 38px;
+	left: 300px;
+	right: 0;
+	bottom: 0;
+	background-color: transparent;
+	margin: 23px;
+}
+.dash-link{
+	color: white;
+	text-decoration: none;
+	margin: 10px;
+	line-height: 28px;
+	font-size: 18px;
+}
+.section{
+    background-color: #00adb5;
+    color: white;
+}
+.section *{
+    color: white;
+    padding: 10px;
+}
