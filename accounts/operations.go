@@ -1,16 +1,16 @@
 package accounts
 
-//NewAccount makes a new account
-func NewAccount() {
+//New makes a new account
+func New() {
 	//
 }
 
-//UpdateAccount makes a new account
-func UpdateAccount() {
+//Update updates an account
+func Update() {
 	//
 }
 
-//DelAccount makes a new account
-func DelAccount() {
+//Del deletes an account
+func Del() {
 	//
 }
