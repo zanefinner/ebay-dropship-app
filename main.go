@@ -5,8 +5,8 @@ import (
 
 	"github.com/go-martini/martini"
 	"github.com/martini-contrib/render"
-	"github.com/zanefinner/web-scraper/accounts"
-	"github.com/zanefinner/web-scraper/api"
+	"github.com/zanefinner/ebay-dropship-app/accounts"
+	"github.com/zanefinner/ebay-dropship-app/api"
 )
 
 func main() {
@@ -20,6 +20,7 @@ func main() {
 	})
 	//Account
 	server.Group("/accounts", func(r martini.Router) {
+		r.Post("login", accounts.Login)
 		r.Post("/new", accounts.New)
 		r.Put("/update/:id", accounts.Update)
 		r.Delete("/delete/:id", accounts.Del)

@@ -14,3 +14,8 @@ func Update() {
 func Del() {
 	//
 }
+
+//Login returns a form to use to log in
+func Login() {
+	//
+}
