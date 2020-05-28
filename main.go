@@ -38,7 +38,8 @@ func main() {
 
 	//Api for AJAX
 	server.Group("/api", func(link martini.Router) {
-		link.Get("/products", api.ListProducts)
+		link.Get("/ebay", api.Use)
 	})
+
 	server.Run()
 }
